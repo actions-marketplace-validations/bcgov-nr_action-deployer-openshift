@@ -120,7 +120,7 @@ runs:
 
     - name: Penetration Test
       if: steps.get-route.outputs.route &&( inputs.penetration_test == 'true' )
-      uses: zaproxy/action-full-scan@v0.4.0
+      uses: zaproxy/action-full-scan@v0.5.1
       with:
         target: https://${{ steps.get-route.outputs.route }}
         cmd_options: "-a"
