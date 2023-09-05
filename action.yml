@@ -39,7 +39,7 @@ inputs:
 runs:
   using: composite
   steps:
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@v4
       with:
         repository: ${{ inputs.repository }}
 
@@ -128,4 +128,4 @@ runs:
         allow_issue_writing: false
 
     - name: Checkout to make sure action.yml is present (tests)
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
